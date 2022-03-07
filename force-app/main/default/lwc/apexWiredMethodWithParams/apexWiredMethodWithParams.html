@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Apex Wired Method With Parameters" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+        <lightning-input type="search" label="Search" onchange={handleChange} value={searchkey}></lightning-input></br>
+
+        <template if:true={contacts.data}>
+            <template for:each={contacts.data} for:item="contact">
+                <p key={contact.id}>{contact.Name}</p>
+            </template>
+        </template>
+
+        <template if:true={contacts.error}>
+            <!--<c-error-panel errors={contacts.error}></c-error-panel>-->
+        </template>
+        </div>
+    </lightning-card>
+</template>

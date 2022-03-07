@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="QuizApp" icon-name="standard:account">
+    <h1> 1)Who is the founder of Tesla ?</h1>
+<lightning-radio-group name="radiogroup"
+    options={options}
+    value={value}
+    type="radio"></lightning-radio-group></br>
+
+    <!--<lightning-button label="Save" variant="brand" >Save</lightning-button> &nbsp; &nbsp; &nbsp; &nbsp; -->
+    <lightning-button label="Next" variant="brand" onclick={gotosecondquestion}>Next</lightning-button>
+</lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+
+    <lightning-card title="ForEach Example">
+        <template for:each={stuents} for:item="stu">
+            <li key={stu.id}>{stu.Name},{stu.Branch}</li>
+        </template>
+    </lightning-card>
+    
+    <!-- 
+        <lightning-card title="ForEach Example">
+        <template for:each={contacts} for:item="contact">
+            <li key={contact.Id}>{contact.Name},{contact.Title}</li>
+        </template>
+    </lightning-card>
+-->
+</template>

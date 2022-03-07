@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <lightning-input type="checkbox" label="show Details" onchange={handleChange}></lightning-input>
+        <template if:true={aredetailsvisible}>These are the Details </template>
+        <template if:false={aredetailsvisible}>No Details are available</template>
+    </lightning-card>
+</template>

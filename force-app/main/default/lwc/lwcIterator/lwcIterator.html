@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+    <b>for:each directive</b>
+    <template for:each={students} for:item="item" for:index="index">
+        <p key={item.id}>{item.Name},{item.Branch}</p>
+    </template>    
+
+    <b>Iterator directive</b>
+    <template iterator:itt={students}>
+        <li key={itt.value.id}>
+            {itt.value.id}
+            {itt.value.Name}
+            {itt.value.Branch}
+        </li>
+    </template>
+</lightning-card>
+</template>

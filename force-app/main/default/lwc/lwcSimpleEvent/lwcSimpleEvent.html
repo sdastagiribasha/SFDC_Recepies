@@ -1,0 +1,7 @@
+<template>
+    <c-lwc-paginator onnext={handlenextevent} onprevious={handlepreviousevent}></c-lwc-paginator>
+
+    <template if:true={page}>
+        Current Page is : {page}
+    </template>
+</template>
